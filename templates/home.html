@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>amber</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+.home{ margin-top: 100px;
+
+}
+.form_label{
+	padding-top: 20px;
+}
+.padd{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+	
+
+	input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+</style>
+<body>
+<div>
+	 {% include 'include/navbar.html' %}
+</div>
+<div class="container home">
+	<div class = "row">
+		<div class="col-sm-6 col-xs-12">
+			<center><img src="static/rew1.png" class="img-responsive" alt="Rivews" height="400px" width="400px"></center>
+		</div>
+		<div class="col-sm-6 col-xs-12" class="form_label">
+			<form action="/" method="POST" class="padd">
+					    <label for="fname" class="form_label">First Name</label>
+					    <input type="text" id="fname" name="fname" class="form_label" placeholder="Your name.." required>
+
+					    <label for="lname" class="form_label">Last Name</label>
+					    <input type="text" id="lname" name="lname" placeholder="Your last name.." required >
+
+					    <center class="form_label" ><input  type="submit" value="Send"></center>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
