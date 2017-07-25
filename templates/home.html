@@ -47,19 +47,20 @@ input[type=submit]:hover {
 	 {% include 'include/navbar.html' %}
 </div>
 <div class="container home">
+	{% include 'include/message.html' %}
 	<div class = "row">
 		<div class="col-sm-6 col-xs-12">
 			<center><img src="static/rew1.png" class="img-responsive" alt="Rivews" height="400px" width="400px"></center>
 		</div>
 		<div class="col-sm-6 col-xs-12" class="form_label">
 			<form action="/" method="POST" class="padd">
-					    <label for="fname" class="form_label">First Name</label>
-					    <input type="text" id="fname" name="fname" class="form_label" placeholder="Your name.." required>
+					    <label for="fname" class="form_label">Name</label>
+					    <input type="text" id="fname" name="name" class="form_label" placeholder="Your name.." required>
 
-					    <label for="lname" class="form_label">Last Name</label>
-					    <input type="text" id="lname" name="lname" placeholder="Your last name.." required >
+					    <label for="lname" class="form_label">Email</label>
+					    <input type="text" id="lname" name="email" placeholder="Your email.." required >
 
-					    <center class="form_label" ><input  type="submit" value="Send"></center>
+					    <center class="form_label" ><a href="/welcome"><input  type="submit" value="Done"></a></center>
 			</form>
 		</div>
 	</div>

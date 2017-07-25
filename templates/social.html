@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>amber</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+
+	
+
+	input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 70%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ques{
+    padding-top: 20px;
+}
+.heading{
+    font-size: 30px;
+    
+}
+.quest{font-size: 30px;
+font-family: "Times New Roman", Times, serif;}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+</style>
+<body>
+<div>
+	 {% include 'include/navbar.html' %}
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <center><b class="heading">Corruption</b></center>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container ques">
+    <div class="row">
+        <div class="col-xs-12">
+            <form action="/" method="POST" class="padd quest">
+                        <label for="cone" class="form_label">1. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="c1" name="fname" class="form_label" placeholder="Your answer" required>
+
+                        <label for="ctwo" class="form_label">2. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="lname" name="lname" placeholder="Your answer" required >
+
+                         <label for="fname" class="form_label">1. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="fname" name="fname" class="form_label" placeholder="Your answer" required>
+
+                        <label for="lname" class="form_label">2. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="lname" name="lname" placeholder="Your answer" required >
+
+                         <label for="fname" class="form_label">1. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="fname" name="fname" class="form_label" placeholder="Your answer" required>
+
+                        <label for="lname" class="form_label">2. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="lname" name="lname" placeholder="Your answer" required >
+
+                         <label for="fname" class="form_label">1. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="fname" name="fname" class="form_label" placeholder="Your answer" required>
+
+                        <label for="lname" class="form_label">2. Do you believe corruption  causes many issues within the contemporary world? </label>
+                        <input type="text" id="lname" name="lname" placeholder="Your answer" required >
+
+                        <center class="form_label" ><input  type="submit" value="Are you sure ? "></center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
