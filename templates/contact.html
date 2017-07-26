@@ -16,6 +16,34 @@
 	}
 	.w3-button {width:150px;}
 	
+		input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+	
+
 </style>
 <body>
 <div>
@@ -29,5 +57,36 @@
 	</div>
 </div>
 <hr>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+
+			<center><h2><b>If you have any new topics, questions or suggestions then contact me frequently.</b></h2></center>
+				<div class = "form">
+  					<br>
+
+  					<form action="/" method="POST" >
+					    <label for="fname">First Name</label>
+					    <input type="text" id="fname" name="fname" placeholder="Your name.." required>
+
+					    <label for="lname">Last Name</label>
+					    <input type="text" id="lname" name="lname" placeholder="Your last name.." required>
+
+					    <label for="email">Email</label>
+					    <input type="text" id="email" name="email" placeholder="Email.." required>
+
+					    <div class="form-group ">
+					      <label for="comment">Comment:</label>
+					      <textarea class="form-control" name = "comment" rows="5" id="comment" required></textarea>
+					    </div>
+
+					    
+					  
+					    <input  type="submit" value="Send">
+					</form>
+				</div>
+	</div>
+</div>
 </body>
 </html>

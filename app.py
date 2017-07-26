@@ -13,38 +13,6 @@ mysql = MySQL(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    if request.method == 'POST':
-
-
-    
-
-        try:
-            name = request.form['name']
-            
-         
-            email = request.form['email']
-            
-            cur = mysql.connection.cursor()
-            x = cur.execute("SELECT * FROM register WHERE email = (%s)",(thwart(email),))
-
-
-            if cur.fetchone() is not None:
-                flash('Sorry, Email already registered', 'success')
-
-                return redirect(url_for('home'))
-            else:
-                cur.execute("INSERT INTO register(name,email) VALUES(%s,%s)",(name,email))        
-                mysql.connection.commit()
-
-            # Close connection
-                cur.close()
-            
-
-                return redirect(url_for('welcome'))
-        except Exception as e:
-            return(str(e))
-        
-            return redirect(url_for('welcome'))
     return render_template('home.html')
 
 @app.route('/welcome')
@@ -54,10 +22,9 @@ def  welcome():
 @app.route('/social')
 def social():
     return render_template('social.html')
-@app.route('/corruption')
+@app.route('/corruption',methods=['GET', 'POST'])
 def corruption():
     return render_template('corruption.html')
-
 @app.route('/reservation')
 def reservation():
     return render_template('reservation.html')

@@ -3,6 +3,7 @@
 <head>
 	<title>amber</title>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
 .home{ margin-top: 100px;
@@ -37,6 +38,11 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+.welcome{
+		color:000000;
+		font-size: 50px;
+	}
+	.w3-button {width:150px;}
 
 input[type=submit]:hover {
     background-color: #45a049;
@@ -46,7 +52,7 @@ input[type=submit]:hover {
 <div>
 	 {% include 'include/navbar.html' %}
 </div>
-<div class="container home">
+<!--<div class="container home">
 	{% include 'include/message.html' %}
 	<div class = "row">
 		<div class="col-sm-6 col-xs-12">
@@ -62,6 +68,54 @@ input[type=submit]:hover {
 
 					    <center class="form_label" ><a href="/welcome"><input  type="submit" value="Done"></a></center>
 			</form>
+		</div>
+	</div>
+</div>-->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<center><img src="static/rew1.png" class="img-responsive" alt="Rivews" height="400px" width="400px"></center>
+		</div>
+	</div>
+</div>
+<div class="container greetings">
+	<div class="row">
+		<div class="col-xs-12">
+			<center class="welcome"><b>Categories</b></center>
+		</div>
+	</div>
+</div>
+<hr>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/social"><button class="w3-button w3-black w3-round-xxlarge">Social Media</button></a></center><br>
+		</div>
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/politics"><button class="w3-button w3-black w3-round-xxlarge">Politics</button></a></center><br>
+		</div>
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/movies"><button class="w3-button w3-black w3-round-xxlarge">Movies</button></a></center><br>
+		</div>
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/env"><button class="w3-button w3-black w3-round-xxlarge">Environment</button></a></center><br>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/internet"><button class="w3-button w3-black w3-round-xxlarge">Internet</button></a></center><br>
+		</div>
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/reservation"><button class="w3-button w3-black w3-round-xxlarge">Reservation</button></a></center><br>
+		</div>
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/education"><button class="w3-button w3-black w3-round-xxlarge">Demonetisation</button></a></center><br>
+		</div>
+		<div class="col-sm-3 col-xs-12">
+			 <center><a href="/corruption"><button class="w3-button w3-black w3-round-xxlarge">Corruption</button></a></center><br>
 		</div>
 	</div>
 </div>
