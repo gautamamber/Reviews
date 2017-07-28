@@ -6,6 +6,9 @@
 	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
+.greetings{
+	margin-top: 50px;
+}
 .home{ margin-top: 100px;
 
 }
@@ -39,42 +42,31 @@ input[type=submit] {
     cursor: pointer;
 }
 .welcome{
-		color:000000;
-		font-size: 50px;
+		color:#49AEA4;
+		font-size: 60px;
 	}
-	.w3-button {width:150px;}
+	.w3-button {width:150px;
+	}
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+body  {
+    background-image: url("static/img/re.jpg");
+    
+}
+.mar{
+	margin-top: 40px;
 }
 </style>
 <body>
 <div>
 	 {% include 'include/navbar.html' %}
 </div>
-<!--<div class="container home">
-	{% include 'include/message.html' %}
-	<div class = "row">
-		<div class="col-sm-6 col-xs-12">
-			<center><img src="static/rew1.png" class="img-responsive" alt="Rivews" height="400px" width="400px"></center>
-		</div>
-		<div class="col-sm-6 col-xs-12" class="form_label">
-			<form action="/" method="POST" class="padd">
-					    <label for="fname" class="form_label">Name</label>
-					    <input type="text" id="fname" name="name" class="form_label" placeholder="Your name.." required>
-
-					    <label for="lname" class="form_label">Email</label>
-					    <input type="text" id="lname" name="email" placeholder="Your email.." required >
-
-					    <center class="form_label" ><a href="/welcome"><input  type="submit" value="Done"></a></center>
-			</form>
-		</div>
-	</div>
-</div>-->
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12">
-			<center><img src="static/rew1.png" class="img-responsive" alt="Rivews" height="400px" width="400px"></center>
+			<center></center>
 		</div>
 	</div>
 </div>
@@ -87,35 +79,35 @@ input[type=submit]:hover {
 </div>
 <hr>
 
-<div class="container">
+<div class="container mar">
 	<div class="row">
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/social"><button class="w3-button w3-black w3-round-xxlarge">Social Media</button></a></center><br>
+			 <center><a href="/social"><button class="w3-button w3-red w3-round-xxlarge">Social Media</button></a></center><br>
 		</div>
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/politics"><button class="w3-button w3-black w3-round-xxlarge">Politics</button></a></center><br>
+			 <center><a href="/politics"><button class="w3-button w3-red w3-round-xxlarge">Politics</button></a></center><br>
 		</div>
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/movies"><button class="w3-button w3-black w3-round-xxlarge">Movies</button></a></center><br>
+			 <center><a href="/movies"><button class="w3-button w3-red w3-round-xxlarge">Movies</button></a></center><br>
 		</div>
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/env"><button class="w3-button w3-black w3-round-xxlarge">Environment</button></a></center><br>
+			 <center><a href="/env"><button class="w3-button w3-red w3-round-xxlarge">Environment</button></a></center><br>
 		</div>
 	</div>
 </div>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/internet"><button class="w3-button w3-black w3-round-xxlarge">Internet</button></a></center><br>
+			 <center><a href="/internet"><button class="w3-button w3-red w3-round-xxlarge">Internet</button></a></center><br>
 		</div>
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/reservation"><button class="w3-button w3-black w3-round-xxlarge">Reservation</button></a></center><br>
+			 <center><a href="/reservation"><button class="w3-button w3-red w3-round-xxlarge">Reservation</button></a></center><br>
 		</div>
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/education"><button class="w3-button w3-black w3-round-xxlarge">Demonetisation</button></a></center><br>
+			 <center><a href="/education"><button class="w3-button w3-red w3-round-xxlarge">Demonetisation</button></a></center><br>
 		</div>
 		<div class="col-sm-3 col-xs-12">
-			 <center><a href="/corruption"><button class="w3-button w3-black w3-round-xxlarge">Corruption</button></a></center><br>
+			 <center><a href="/corruption"><button class="w3-button w3-red w3-round-xxlarge">Corruption</button></a></center><br>
 		</div>
 	</div>
 </div>
